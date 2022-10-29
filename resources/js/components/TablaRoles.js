@@ -18,7 +18,7 @@ export default function TablaRoles(props){
                             <tr key={role.id}>
                                 <td>{role.id}</td>
                                 <td>{role.name}</td>
-                                <td><button>Hola</button><button>Hola</button></td>
+                                <td><button>Hola</button><button>Hola</button><button>Hola</button></td>
 
                             </tr>
                         ))
