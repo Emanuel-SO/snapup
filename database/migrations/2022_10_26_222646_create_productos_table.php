@@ -18,10 +18,11 @@ class CreateProductosTable extends Migration
             $table->string('nombre');
             $table->string('descripcion');
             $table->decimal('precio',7,2);
-            $table->string('imagen1');
-            $table->string('imagen2');
-            $table->string('imagen3');
             $table->integer('cantidad');
+            $table->string('oferta');// poner falso o verdadero?
+            $table->float('descuento');// cantidad de 0 a 100 de descuento
+            $table->string('devolucion');// poner falso o verdadero?
+            $table->string('envio');// poner falso o verdadero?
             $table->timestamps();
 
             //Crea llave foranea con el id de otra tabla
