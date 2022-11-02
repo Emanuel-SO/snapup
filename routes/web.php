@@ -23,6 +23,7 @@ Route::get('/roles', [App\Http\Controllers\RoleController::class, 'index']);
 Route::view('admin', 'admin.index');
 Route::view('productos', 'productos');
 Route::view('producto', 'producto');
+Route::view('carrito', 'carrito');
 Route::get('ejemplo', [App\Http\Controllers\RoleController::class, 'index']);
 
 Route::group(['middleware' => ['auth']], function(){
