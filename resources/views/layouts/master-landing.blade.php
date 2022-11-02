@@ -52,8 +52,8 @@
                         </li>
                       </ul>
                       <div>
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                          <button class="btn btn-outline-success" type="submit">Search</button>
+                          <button class="btn btn-outline-success mx-2" type="submit">Search</button>
+                          <button class="btn btn-outline-success mx-2" type="submit">Search</button>
                       </div>
                   
                 </div>
