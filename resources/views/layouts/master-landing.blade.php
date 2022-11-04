@@ -25,35 +25,27 @@
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SnapUp</h5>
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SnapUp icono</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
+                          <a class="nav-link" href="#">Productos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled">Disabled</a>
+                          <a class="nav-link" href="#">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contacto</a>
                         </li>
                       </ul>
                       <div>
-                          <button class="btn btn-outline-success mx-2" type="submit">Search</button>
-                          <button class="btn btn-outline-success mx-2" type="submit">Search</button>
+                          <button class="btn btn-outline-primary mx-2" type="submit">Ingresar</button>
+                          <button class="btn btn-outline-primary mx-2" type="submit">Registrarse</button>
                       </div>
                   
                 </div>
