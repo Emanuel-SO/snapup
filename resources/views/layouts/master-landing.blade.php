@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
              <div class="d-flex">
-                <a class="navbar-brand" href="#">SnapUp</a>
+                <a class="navbar-brand" href="{{ url('/') }}">SnapUp</a>
                 <form class="d-flex" role="search">
                   <input class="form-control p-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
@@ -31,21 +31,25 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Productos</a>
+                          <a class="nav-link" href="{{ url('/productos') }}">Productos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Carrito</a>
+                          <a class="nav-link" href="{{ url('/carrito') }}">Carrito</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Contacto</a>
                         </li>
                       </ul>
                       <div>
-                          <button class="btn btn-outline-primary mx-2" type="submit">Ingresar</button>
-                          <button class="btn btn-outline-primary mx-2" type="submit">Registrarse</button>
+                          <a href="{{ url('/login') }}">
+                            <button class="btn btn-outline-primary mx-2" type="submit">Ingresar</button>
+                          </a>
+                          <a href="{{ url('/registro') }}">
+                            <button class="btn btn-outline-primary mx-2" type="submit">Registrarse</button>
+                          </a>
                       </div>
                   
                 </div>
