@@ -12,7 +12,7 @@ class RoleController extends Controller
         //return view simpre esta escuchado la carpeta view, si quiero entrar a una carpeta dentro de views tienen que ser
         //carpeta.archivo si no solo archivo
         //compact pasa todas la variables php que se le agreguen
-        return view('ejemplo', compact('roles'));
+        return view('perfil', compact('roles'));
     }
 
 

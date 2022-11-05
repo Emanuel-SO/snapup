@@ -50,6 +50,10 @@
                           <a href="{{ url('/registro') }}">
                             <button class="btn btn-outline-primary mx-2" type="submit">Registrarse</button>
                           </a>
+                          {{-- este boton solo se ve si ya inicio sesion el usuario --}}
+                          <a href="{{ url('/perfil') }}">
+                            <button class="btn btn-outline-primary mx-2" type="submit">Perfil</button>
+                          </a>
                       </div>
                   
                 </div>
