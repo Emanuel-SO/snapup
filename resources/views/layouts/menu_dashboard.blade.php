@@ -31,12 +31,12 @@
     <!-- Nav Item - Pages Collapse Menu -->
     {{-- Se muestra solo en usuario normal --}}
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-            aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompras"
+            aria-expanded="true" aria-controls="collapseCompras">
             <i class="fas fa-fw fa-cog"></i>
             <span>Compras</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseCompras" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Opciones Compras:</h6>
                 <a class="collapse-item" href="buttons.html">Ver Compras</a>
@@ -51,7 +51,7 @@
             <i class="fas fa-fw fa-wrench"></i>
             <span>Mensajes</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+        <div id="collapseMensajes" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Opciones Mensajes:</h6>
@@ -71,12 +71,12 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-            aria-expanded="true" aria-controls="collapsePages">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProductos"
+            aria-expanded="true" aria-controls="collapseProductos">
             <i class="fas fa-fw fa-folder"></i>
             <span>Productos</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapseProductos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Opciones Productos:</h6>
                 <a class="collapse-item" href="login.html">Todos productos</a>
@@ -90,30 +90,25 @@
         </div>
     </li>
 
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
-    </li>
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-            aria-expanded="true" aria-controls="collapsePages">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagina"
+            aria-expanded="true" aria-controls="collapsePagina">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Productos</span>
+            <span>Configuración</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapsePagina" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Opciones Productos:</h6>
-                <a class="collapse-item" href="login.html">Todos productos</a>
+                <h6 class="collapse-header">Opciones Página:</h6>
+                <a class="collapse-item" href="login.html">Imagenes</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opciones Categorias:</h6>
                 <a class="collapse-item" href="404.html">Ver Categorias</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opciones Marcas:</h6>
                 <a class="collapse-item" href="404.html">Ver Marcas</a>
+                
             </div>
         </div>
     </li>
