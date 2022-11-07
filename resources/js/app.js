@@ -15,4 +15,6 @@ import './bootstrap';
  require('./components/Example');
  require('./components/Roles');
  require('./components/TablaRoles');
+ require('./components/TodosProductos');
+
  

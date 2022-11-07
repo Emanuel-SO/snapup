@@ -79,7 +79,7 @@
         <div id="collapseProductos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Opciones Productos:</h6>
-                <a class="collapse-item" href="login.html">Todos productos</a>
+                <a class="collapse-item" href="login.html">Ver Productos</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opciones Categorias:</h6>
                 <a class="collapse-item" href="404.html">Ver Categorias</a>
@@ -101,13 +101,7 @@
         <div id="collapsePagina" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Opciones Página:</h6>
-                <a class="collapse-item" href="login.html">Imagenes</a>
-                <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Opciones Categorias:</h6>
-                <a class="collapse-item" href="404.html">Ver Categorias</a>
-                <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Opciones Marcas:</h6>
-                <a class="collapse-item" href="404.html">Ver Marcas</a>
+                <a class="collapse-item" href="login.html">Configuración</a>
                 
             </div>
         </div>
