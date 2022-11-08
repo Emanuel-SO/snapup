@@ -16,5 +16,6 @@ import './bootstrap';
  require('./components/Roles');
  require('./components/TablaRoles');
  require('./components/TodosProductos');
+ require('./components/Marcas');
 
  

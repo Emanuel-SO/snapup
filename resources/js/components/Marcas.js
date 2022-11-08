@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Swal from 'sweetalert2';
 
 
-export default function TodosProductos(props){
+export default function Marcas(props){
 
     const mostrarAlerta=()=>{
         Swal.fire('Any fool can use a computer');
@@ -14,27 +14,16 @@ export default function TodosProductos(props){
            <table class="table">
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Nombre</th>
-                       
-                        <th>Precio</th>
-                        <th>Cantidad</th>
-                        <th>Oferta</th>
-                        <th>Descuento</th>
-                        <th>Categoria</th>
-                        <th>Marca</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        props.productos.map(producto => (
-                            <tr key={producto.id}>
-                                <td>{producto.nombre}</td>
-                                <td>{producto.precio}</td>
-                                <td>{producto.cantidad}</td>
-                                <td>{producto.oferta}</td>
-                                <td>{producto.descuento}</td>
-                                <td>{producto.categoria_id}</td>
-                                <td>{producto.marca_id}</td>
+                        props.marcas.map(marca => (
+                            <tr key={marca.id}>
+                                <td>{marca.id}</td>
+                                <td>{marca.nombre}</td>
                                 <td class="input-field">
                                     <div>
                                         <button type="button" class="btn mx-2 btn-warning" onClick={()=>mostrarAlerta()}>Ed</button>
@@ -51,10 +40,10 @@ export default function TodosProductos(props){
     )
 }
 
-if (document.getElementById('tabla-productos')) {
-    const thisElement = document.getElementById('tabla-productos');
+if (document.getElementById('tabla-marcas')) {
+    const thisElement = document.getElementById('tabla-marcas');
 
     let props = Object.assign({}, thisElement.dataset);
     //lo que lleva el props. es lo que ira en el data- de la vista
-    ReactDOM.render(<TodosProductos productos={JSON.parse(props.productos)}/>, thisElement);
+    ReactDOM.render(<Marcas marcas={JSON.parse(props.marcas)}/>, thisElement);
 }
