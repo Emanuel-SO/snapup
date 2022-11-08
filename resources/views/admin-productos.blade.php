@@ -6,7 +6,8 @@
                 <h6 class="m-0 font-weight-bold text-primary">Productos</h6>
             </div>
             <div class="card-body">
-                <div id="tabla-productos" data-roles="{{json_encode($productos)}}"></div>
+                {{-- data-algo, ese algo es debe ser lo que se especifica en el dataset del componente --}}
+                <div id="tabla-productos" data-productos="{{json_encode($productos)}}"></div>
             </div>
         </div>
     </div>

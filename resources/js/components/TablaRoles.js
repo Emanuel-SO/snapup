@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Swal from 'sweetalert2';
 
 export default function TablaRoles(props){
+    const mostrarAlerta=()=>{
+        Swal.fire('Any fool can use a computer');
+    }
     return (
         <div className='container'>
            <table>
@@ -18,7 +22,7 @@ export default function TablaRoles(props){
                             <tr key={role.id}>
                                 <td>{role.id}</td>
                                 <td>{role.name}</td>
-                                <td><button>Hola</button><button>Hola</button><button>Hola</button><button>Hola</button></td>
+                                <td><button onClick={()=>mostrarAlerta()}>Hola</button></td>
 
                             </tr>
                         ))
