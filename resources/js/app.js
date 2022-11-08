@@ -12,10 +12,9 @@ import './bootstrap';
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
- require('./components/Example');
- require('./components/Roles');
  require('./components/TablaRoles');
  require('./components/TodosProductos');
  require('./components/Marcas');
+ require('./components/Categorias');
 
  

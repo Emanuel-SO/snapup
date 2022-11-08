@@ -80,12 +80,13 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Opciones Productos:</h6>
                 <a class="collapse-item" href="{{ url('/admin-productos') }}">Ver Productos</a>
+                <a class="collapse-item" href="{{ url('/admin-productos') }}">Imagenes</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opciones Categorias:</h6>
-                <a class="collapse-item" href="404.html">Ver Categorias</a>
+                <a class="collapse-item" href="{{ url('/admin-categorias') }}">Ver Categorias</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Opciones Marcas:</h6>
-                <a class="collapse-item" href="404.html">Ver Marcas</a>
+                <a class="collapse-item" href="{{ url('/admin-marcas') }}">Ver Marcas</a>
             </div>
         </div>
     </li>
