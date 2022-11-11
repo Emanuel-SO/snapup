@@ -30,6 +30,7 @@ Route::get('perfil', [App\Http\Controllers\RoleController::class, 'index']);
 Route::get('admin-productos', [App\Http\Controllers\ProductController::class, 'index']);
 Route::get('admin-marcas', [App\Http\Controllers\MarcasController::class, 'index']);
 Route::get('admin-categorias', [App\Http\Controllers\CategoriasController::class, 'index']);
+Route::get('admin-usuarios', [App\Http\Controllers\UsuarioController::class, 'index']);
 
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

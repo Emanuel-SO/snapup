@@ -5330,6 +5330,7 @@ __webpack_require__(/*! ./components/TablaRoles */ "./resources/js/components/Ta
 __webpack_require__(/*! ./components/TodosProductos */ "./resources/js/components/TodosProductos.js");
 __webpack_require__(/*! ./components/Marcas */ "./resources/js/components/Marcas.js");
 __webpack_require__(/*! ./components/Categorias */ "./resources/js/components/Categorias.js");
+__webpack_require__(/*! ./components/Usuarios */ "./resources/js/components/Usuarios.js");
 
 /***/ }),
 
@@ -5369,6 +5370,53 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/BotonesTablaUsuario.js":
+/*!********************************************************!*\
+  !*** ./resources/js/components/BotonesTablaUsuario.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BotonesTablaUsuario)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+function BotonesTablaUsuario(props) {
+  var mostrarAlerta = function mostrarAlerta() {
+    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default().fire('Any fool can use a computer');
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+      type: "button",
+      className: "btn mx-2 btn-warning",
+      onClick: function onClick() {
+        return mostrarAlerta();
+      },
+      children: "Editar"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+      type: "button",
+      "class": true,
+      Name: "btn mx-2 btn-danger",
+      onClick: function onClick() {
+        return mostrarAlerta();
+      },
+      children: "Elimiar"
+    })]
+  });
+}
 
 /***/ }),
 
@@ -5699,6 +5747,81 @@ if (document.getElementById('tabla-productos')) {
   //lo que lleva el props. es lo que ira en el data- de la vista
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(TodosProductos, {
     productos: JSON.parse(props.productos)
+  }), thisElement);
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/Usuarios.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Usuarios.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Usuarios)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _BotonesTablaUsuario__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BotonesTablaUsuario */ "./resources/js/components/BotonesTablaUsuario.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function Usuarios(props) {
+  var mostrarAlerta = function mostrarAlerta() {
+    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default().fire('Any fool can use a computer');
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    className: "table-responsive",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+      className: "table",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            children: "ID"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            children: "Nombre"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            children: "Correo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+            children: "Opciones"
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("tbody", {
+        children: props.usuarios.map(function (usuario) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+              children: usuario.id
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+              children: usuario.nombre
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+              children: usuario.correo
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+              className: "input-field",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_BotonesTablaUsuario__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                eachRow: usuario.id
+              })
+            })]
+          }, usuario.id);
+        })
+      })]
+    })
+  });
+}
+if (document.getElementById('tabla-usuarios')) {
+  var thisElement = document.getElementById('tabla-usuarios');
+  var props = Object.assign({}, thisElement.dataset);
+  //lo que lleva el props. es lo que ira en el data- de la vista
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Usuarios, {
+    usuarios: JSON.parse(props.usuarios)
   }), thisElement);
 }
 

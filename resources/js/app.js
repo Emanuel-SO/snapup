@@ -16,5 +16,6 @@ import './bootstrap';
  require('./components/TodosProductos');
  require('./components/Marcas');
  require('./components/Categorias');
+ require('./components/Usuarios');
 
  
